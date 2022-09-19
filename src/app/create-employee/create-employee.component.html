@@ -3,23 +3,25 @@
         <div class="row">
             <h3 class="text-center"> Create Employee </h3>
             <hr />
+            <!--Card body start-->
             <div class="card-body">
-                <form (ngSubmit)="onSubmit()">
+                <!--form start-->
+                <form (ngSubmit)="onSubmit()"> <!--Calling the method onSubmit to save an Employee -->
 
                     <div class="form-group">
-                        <label> First Name</label>
-                        <input type="text" class="form-control" id="firstName" [(ngModel)]="employee.firstName"
+                        <label> First Name</label>                             <!-- Using two-way binding with the Object Employee and firstName. Reference https://angular.io/guide/two-way-binding -->
+                        <input type="text" class="form-control" id="firstName" [(ngModel)]="employee.firstName" 
                             name="firstName">
                     </div>
 
                     <div class="form-group">
-                        <label> Last Name</label>
+                        <label> Last Name</label>                              <!-- Using two-way binding with the Object Employee and lastName. Reference https://angular.io/guide/two-way-binding -->
                         <input type="text" class="form-control" id="lastName" [(ngModel)]="employee.lastName"
                             name="lastName">
                     </div>
 
                     <div class="form-group">
-                        <label> Email Id</label>
+                        <label> Email Id</label>                             <!-- Using two-way binding with the Object Employee and emailId. Reference https://angular.io/guide/two-way-binding -->
                         <input type="text" class="form-control" id="emailId" [(ngModel)]="employee.emailId"
                             name="emailId">
                     </div>
@@ -28,6 +30,8 @@
                     <button class="btn btn-success" type="submit">Submit</button>
 
                 </form>
+                <!--form end-->
+              <!--Card body end-->
             </div>
         </div>
     </div>

@@ -6,11 +6,11 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 const routes: Routes = [
-  {path: 'employees', component: EmployeeListComponent},
-  {path: 'create-employee', component: CreateEmployeeComponent},
-  {path: '', redirectTo: 'employees', pathMatch: 'full'},
-  {path: 'update-employee/:id', component: UpdateEmployeeComponent},
-  {path: 'employee-details/:id', component: EmployeeDetailsComponent}
+  {path: 'employees', component: EmployeeListComponent},           // Main component that containt the employee list
+  {path: 'create-employee', component: CreateEmployeeComponent},   // Url to create employees 
+  {path: '', redirectTo: 'employees', pathMatch: 'full'},          // If the url is http://localhost:4200/, then return main component
+  {path: 'update-employee/:id', component: UpdateEmployeeComponent}, // Component to update Employees with the ID as params
+  {path: 'employee-details/:id', component: EmployeeDetailsComponent}  // Component to list personal information with the ID as params
 ];
 
 @NgModule({

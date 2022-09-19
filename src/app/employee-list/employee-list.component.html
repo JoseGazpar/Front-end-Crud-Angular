@@ -12,13 +12,16 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor = "let employee of employees" >
+        <tr *ngFor = "let employee of employees" ><!--Display all the Employees using ngFor-->
             <td> {{ employee.firstName }} </td>
             <td> {{ employee.lastName }} </td>
             <td> {{ employee.emailId }} </td>
             <td>
-                <button (click) = "updateEmployee(employee.id)" class = "btn btn-primary"> Update</button>
-                <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <!--Calling the method to update employees-->
+                <button (click) = "updateEmployee(employee.id)"  class = "btn btn-primary"> Update</button>
+                <!--Calling the method to delete employees-->
+                <button (click) = "deleteEmployee(employee.id)"  class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <!--Calling the method to list personal information-->
                 <button (click) = "employeeDetails(employee.id)" class = "btn btn-primary" style="margin-left: 10px"> View</button>
             </td>
         </tr>
