@@ -1,0 +1,15 @@
+<div class="login">
+    <form class="custom-form" >
+      <h1>Login</h1>
+      <input
+        type="email"
+        [(ngModel)]="employee.emailId"
+        name="email"
+        placeholder="Email"
+        required="required"
+      />
+   
+      <button type="submit" (click)="login()">Log in</button>
+    </form>
+  </div>
+

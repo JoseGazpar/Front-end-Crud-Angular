@@ -15,6 +15,9 @@ export class EmployeeService {
 
   }
   
+  login(emailId: String): Observable<any> {
+    return this.httpClient.get<Employee>(`${this.baseURL}/${emailId}`);
+  }
   // Method to call all the users in the db.
   getEmployeesList(): Observable<Employee[]>{                  
     return this.httpClient.get<Employee[]>(`${this.baseURL}`); // Method Get that containt Employee[], that is data from Users and the baseURL ( http://localhost:8080/api/v1/employees ).
