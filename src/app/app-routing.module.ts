@@ -9,7 +9,7 @@ import { LoginComponent } from "./login/login.component";
 
 const routes: Routes = [
   { path: "", component: AppComponent, pathMatch: "full" },
-  { path: "login/:emailId", component: LoginComponent, pathMatch: "full" },
+  { path: "login", component: LoginComponent, pathMatch: "full" },
   {path: 'employees', component: EmployeeListComponent},           // Main component that containt the employee list
   {path: 'create-employee', component: CreateEmployeeComponent},   // Url to create employees 
  // {path: '', redirectTo: 'employees', pathMatch: 'full'},          // If the url is http://localhost:4200/, then return main component

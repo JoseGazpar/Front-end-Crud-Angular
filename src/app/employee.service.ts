@@ -15,8 +15,8 @@ export class EmployeeService {
 
   }
   
-  login(emailId: String): Observable<any> {
-    return this.httpClient.get<Employee>(`${this.baseURL}/${emailId}`);
+  login(id: number): Observable<any> {
+    return this.httpClient.get(`${this.baseURL}/${id}`);
   }
   // Method to call all the users in the db.
   getEmployeesList(): Observable<Employee[]>{                  
