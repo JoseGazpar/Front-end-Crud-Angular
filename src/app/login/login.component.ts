@@ -10,7 +10,7 @@ import { EmployeeService } from '../employee.service';
 })
 export class LoginComponent implements OnInit {
 
-  @ViewChild('emailId') emailId: ElementRef; // Value from  HTML template
+  @ViewChild('emailId') email: ElementRef; // Value from  HTML template
   
   id: number;
   employee: Employee;
@@ -26,9 +26,9 @@ export class LoginComponent implements OnInit {
 
   login(){
      
-    Object.entries(this.employee).forEach((this.emailId, this.emailId) => {
-      console.log("Hello " + this.emailId)
-    });
+    // Object.entries(this.employee).forEach((this.email, this.email) => {
+    //   console.log("Hello " + this.email)
+    // });
 
     // this.employeeService.login(this.id).subscribe( data => {
     //   console.log(data);
